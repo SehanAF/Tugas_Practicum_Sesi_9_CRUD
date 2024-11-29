@@ -2,7 +2,6 @@ const express = require('express');
 const db = require('../db/connection');
 const router = express.Router();
 
-// GET: Retrieve all students
 router.get('/', (req, res) => {
     db.query('SELECT * FROM mahasiswa', (err, results) => {
         if (err) return res.status(500).send(err.message);
@@ -10,7 +9,6 @@ router.get('/', (req, res) => {
     });
 });
 
-// POST: Add a new student
 router.post('/', (req, res) => {
     const { nama, nim, jurusan, angkatan } = req.body;
     if (!nama || !nim) return res.status(400).send('Nama dan NIM diperlukan.');

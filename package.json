@@ -1,12 +1,12 @@
 {
-  "name": "tugas_practicum_sesi_9_crud",
+  "name": "tugas_9_crud",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "M. Sechan Alfarisi",
+  "author": "Muhammad Sinar Agusta",
   "license": "ISC",
   "description": "",
   "dependencies": {
